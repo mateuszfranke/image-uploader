@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.grid{
+  background-color: white;
+  width: 402px;
+  height: 469px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-template-rows: repeat(5,1fr);
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+button{
+  font-family: 'Noto Sans', sans-serif;
+  width: 101px;
+  height: 31.98px;
+  background: #2F80ED;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  justify-self: center;
+}
+
+h1{
+  color: #4F4F4F;
+  font-weight: 500;
+  margin: 0;
+  display: inline-block;
+  height: fit-content;
+}
+
+h6{
+  color: #828282;
+  font-weight: 500;
+  margin: 0;
+  display: inline-block;
+  height: fit-content;
+
+}
+
+.drag-image{
+  width: 338px;
+  height: 218.9px;
+  background-color: #F6F8FB;
+  border: 1px dashed #97BEF4;
+  border-radius: 12px;
+  background-image: url("../../assets/img1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
