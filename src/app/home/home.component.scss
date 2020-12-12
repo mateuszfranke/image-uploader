@@ -49,33 +49,37 @@ h6{
   background-position: center;
 }
 
-.button{
-  font-family: 'Noto Sans', sans-serif;
+.button-text{
+  font-size: 0.9rem;
+}
+
+
+.file-input-wrapper {
+  width: $btn-width;
+  height:$btn-height;
+  overflow: hidden;
+  position: relative;
+  justify-self: center;
+
+}
+.file-input-wrapper > input[type="file"] {
+  font-size: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.file-input-wrapper > .btn-file-input {
+  display: inline-block;
   width: $btn-width;
   height:$btn-height;
   background: #2F80ED;
-  border-radius: 8px;
-  color: white;
   border: none;
-  justify-self: center;
-  overflow: hidden;
-  cursor: pointer;
-  padding-top: 4px;
-  position: relative;
-  z-index: 2;
-
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
 }
+.file-input-wrapper:hover > .btn-file-input {
+  background: #0769e7;
 
-input{
-  cursor: pointer;
-  width: $btn-width;
-  height: $btn-height;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-}
-
-.button-text{
-  font-size: 0.9rem;
 }

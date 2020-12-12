@@ -12,7 +12,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onFileInput(files: any) {
+  onFileInput(event: any) {
+
+    var files = event.srcElement.files;
     console.log(files);
   }
 }
