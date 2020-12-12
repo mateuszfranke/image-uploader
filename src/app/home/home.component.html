@@ -5,5 +5,9 @@
 
   </div>
   <h6>Or</h6>
-  <button>Choose a file</button>
+  <div class="button">
+    <span class="button-text">Chose a file</span>
+    <input type="file" id="file" (change)="onFileInput($event.target)">
+  </div>
+
 </section>

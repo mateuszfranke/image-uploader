@@ -12,4 +12,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onFileInput(files: any) {
+    console.log(files);
+  }
 }
