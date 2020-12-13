@@ -1,7 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 .grid{
   width: 400.36px;
   height: 143.57px;
   background-color: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 12px;
 
+}
+
+h1{
+  color: #4F4F4F;
+  font-weight: 500;
+  margin: 0;
+}
+
+.loader{
+  width: 340.71px;
+  height: 6px;
+  background: #F2F2F2;
+  border-radius: 8px;
 }
