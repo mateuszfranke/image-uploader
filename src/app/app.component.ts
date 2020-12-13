@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'image-uploader';
+  fileSubmitted: boolean = false;
+
+  onFileSubmit($event: boolean): void {
+    console.log($event);
+    this.fileSubmitted = $event;
+  }
 }

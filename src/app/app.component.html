@@ -1,4 +1,5 @@
 <section class="grid">
-  <app-home></app-home>
+  <app-home *ngIf="!fileSubmitted" (fileSubmitted)="onFileSubmit($event)"></app-home>
+  <app-load *ngIf="fileSubmitted"></app-load>
 </section>
 
