@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+$loader-background-bar-width:340.71px;
+$loader-bar-width:101px;
+
+
 .grid{
   width: 400.36px;
   height: 143.57px;
@@ -10,7 +14,6 @@
   justify-content: center;
   padding: 2rem;
   border-radius: 12px;
-
 }
 
 h1{
@@ -20,8 +23,37 @@ h1{
 }
 
 .loader{
-  width: 340.71px;
+  width: $loader-background-bar-width;
   height: 6px;
   background: #F2F2F2;
   border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar{
+  background-color: #2F80ED;
+  width: $loader-bar-width;
+  height: 6px;
+  border-radius: 8px;
+  position: absolute;
+  left: unset;
+  right: $loader-background-bar-width - $loader-bar-width;
+  animation: move-bar 3s infinite;
+}
+
+@keyframes move-bar {
+  0%{
+    left:unset;
+    right: $loader-background-bar-width - $loader-bar-width;
+  }
+  50%{
+    left: unset;
+    right: 0px;
+  }
+  100%{
+    left:unset;
+    right:$loader-background-bar-width - $loader-bar-width;
+  }
+
 }
