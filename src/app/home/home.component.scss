@@ -2,6 +2,8 @@
 
 $btn-width:100px;
 $btn-height: 32px;
+$blue-1:#2F80ED;
+$blue-2: #0657c3;
 
 .grid{
   background-color: white;
@@ -74,12 +76,30 @@ h6{
   display: inline-block;
   width: $btn-width;
   height:$btn-height;
-  background: #2F80ED;
+  background: $blue-1;
   border: none;
   color: white;
   font-family: 'Noto Sans', sans-serif;
+  animation: btn-hover-leave 1s forwards;
 }
-.file-input-wrapper:hover > .btn-file-input {
-  background: #0769e7;
 
+.file-input-wrapper:hover > .btn-file-input {
+  animation: btn-hover 1s forwards;
 }
+
+@keyframes btn-hover {
+  from{
+    background-color: $blue-1;
+  }
+  to{
+    background-color: $blue-2;
+  }
+}
+ @keyframes btn-hover-leave {
+   from{
+     background-color: $blue-2;
+   }
+   to{
+     background-color: $blue-1;
+   }
+ }
